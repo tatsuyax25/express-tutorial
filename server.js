@@ -17,8 +17,8 @@ app.set('views', path.join(__dirname, 'views'));
 // Mount routes (app.use)
 // Define a "root" route directly on app
 // Tomorrow, we'll use best practice routing
-app.get('/home', function (req, res) {
-  res.send('home');
+app.get('/', function (req, res) {
+  res.redirect('/home');
 });
 
 app.get('/todos', function(req, res) {
